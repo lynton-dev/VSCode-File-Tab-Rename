@@ -1,0 +1,27 @@
+# Source files
+src/**
+tsconfig.json
+.vscode/
+*.ts
+
+# Build artifacts (keep only 'out' folder)
+dist/
+
+# Development files
+.gitignore
+.vscode-test/**
+node_modules/**
+*.vsix
+
+# Documentation that's not needed
+.github/**
+test/**
+*.md
+!README.md
+
+# Keep the icon
+!icon.png
+
+# OS files
+.DS_Store
+Thumbs.db

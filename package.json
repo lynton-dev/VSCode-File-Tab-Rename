@@ -1,0 +1,62 @@
+{
+  "name": "file-tab-rename",
+  "displayName": "File Tab Rename",
+  "description": "Rename files by right-clicking on file tabs",
+  "version": "1.0.2",
+  "publisher": "LyntonSchoeman",
+  "author": "Lynton Schoeman <lynton.dev@outlook.com>",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lynton-dev/VSCode-File-Tab-Rename.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lynton-dev/VSCode-File-Tab-Rename/issues"
+  },
+  "homepage": "https://github.com/lynton-dev/VSCode-File-Tab-Rename#readme",
+  "keywords": [
+    "file",
+    "rename",
+    "tab",
+    "context-menu",
+    "vscode-extension"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fileTabRename.renameFile",
+        "title": "Rename File"
+      }
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "fileTabRename.renameFile",
+          "when": "resourceScheme == file",
+          "group": "2_files"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
