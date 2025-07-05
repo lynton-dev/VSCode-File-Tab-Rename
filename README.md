@@ -50,13 +50,3 @@ vsce package
 - VS Code 1.74.0 or higher
 **Requirements for compiling from source:**
 - Node.js and npm
-
-## Release Notes
-
-### 1.0.0
-
-Initial release with basic file renaming functionality.
-
-### 1.0.2
-
-Added icon.
