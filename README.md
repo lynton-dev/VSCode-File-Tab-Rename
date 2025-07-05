@@ -7,16 +7,14 @@ A VS Code extension that allows you to rename files by right-clicking on file ta
 - Right-click on any file tab to see a "Rename File" option in the context menu
 - Input validation to prevent invalid file names
 - Automatic handling of open files (closes and reopens after rename)
-- Error handling and user feedback
+- Error handling
 
-## Installation
-
-1. Create a new folder for your extension
-2. Copy all the provided files into the folder
-3. Open the folder in VS Code
-4. Run `npm install` to install dependencies
-5. Press `F5` to launch a new Extension Development Host window
-6. Test the extension by right-clicking on file tabs
+## Download and Install
+1. Downoad the latest `file-tab-rename-xxx.vsix` file from [Latest Release](https://github.com/lynton-dev/VSCode-File-Tab-Rename/releases/latest/). 
+2. In Visual Studio Code, press Ctrl+Shift+P (or Cmd+Shift+P on Mac) to open the Command Palette.
+3. Search for and run "Extensions: Install from VSIX".
+4. Select the previously downloaded `file-tab-rename-xxx.vsix` file.
+5. Reload the VS Code window.
 
 ## Usage
 
@@ -24,6 +22,15 @@ A VS Code extension that allows you to rename files by right-clicking on file ta
 2. Select "Rename File" from the context menu
 3. Enter the new file name in the input box
 4. Press Enter to confirm or Escape to cancel
+
+## Installation from Source
+
+1. Create a new folder for your extension
+2. Copy all the provided files into the folder
+3. Open the folder in VS Code
+4. Run `npm install` to install dependencies
+5. Press `F5` to launch a new Extension Development Host window
+6. Test the extension by right-clicking on file tabs
 
 ## Building and Packaging
 
@@ -41,14 +48,15 @@ vsce package
 ## Requirements
 
 - VS Code 1.74.0 or higher
+**Requirements for compiling from source:**
 - Node.js and npm
-
-## Known Issues
-
-- None currently known
 
 ## Release Notes
 
 ### 1.0.0
 
 Initial release with basic file renaming functionality.
+
+### 1.0.2
+
+Added icon.
