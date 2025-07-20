@@ -9,7 +9,7 @@ A VS Code extension that allows you to rename files by right-clicking on file ta
 - Automatic handling of open files (closes and reopens after rename)
 - Error handling
 
-## Download and Install
+## Download and Install from GitHub
 1. Downoad the latest `file-tab-rename-xxx.vsix` file from [Latest Release](https://github.com/lynton-dev/VSCode-File-Tab-Rename/releases/latest/). 
 2. In Visual Studio Code, press Ctrl+Shift+P (or Cmd+Shift+P on Mac) to open the Command Palette.
 3. Search for and run "Extensions: Install from VSIX".
