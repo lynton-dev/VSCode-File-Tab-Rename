@@ -2,7 +2,7 @@
   "name": "file-tab-rename",
   "displayName": "File Tab Rename",
   "description": "Rename files by right-clicking on file tabs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "LyntonSchoeman",
   "author": "Lynton Schoeman <lynton.dev@outlook.com>",
   "license": "MIT",
